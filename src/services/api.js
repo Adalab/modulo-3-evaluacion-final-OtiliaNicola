@@ -3,7 +3,7 @@ const getDataFromAPi = () => {//obtenemos los datos de la API
   //https://raw.githubusercontent.com/Adalab/rick-y-morty/master/data/rick-ymorty.json
 
   //APi correcta
-  return fetch('https://rickandmortyapi.com/documentation/#get-all-characters') 
+  return fetch('https://rickandmortyapi.com/api/character/?search=20') 
     .then((response) => response.json())
     .then((data) => {
       const newArray = data.results.map((character) => {
