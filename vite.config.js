@@ -7,7 +7,7 @@ export default defineConfig({
   base:'/modulo-3-evaluacion-final-OtiliaNicola/',
    build: {
     minify: "esbuild",
-    outDir: "../dist",
+    outDir: "./dist",
     sourcemap: "inline",
     emptyOutDir: true,
   },
